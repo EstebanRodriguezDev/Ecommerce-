@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarLA</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="header__contenedor">
+            <div class="header__barra">
+                <a href="index.html">
+                    <img class="header__logo" src="img/logo.svg" alt="imagen logo">
+                </a>
+                <nav class="navegacion" id="navegacion">
+                    <a class="navegacion__enlace" href="index.html">Inicio</a>
+                    <a class="navegacion__enlace" href="#nosotros">Nosotros</a>
+                    <a class="navegacion__enlace" href="#cursos">Cursos</a>
+                    <a class="navegacion__enlace" href="#contacto">Contacto</a>
+                    <ul class="navegacion__enlace navegacion__carrito">
+                        <li>
+                            <i class='bx bx-cart'></i>
+                        </li>
+                        <ul id="carrito-container" class="carrito-container">
+
+                        </ul>
+                    </ul>
+                </nav>
+
+                <div class="header__responsive" id="header__responsive">
+                    <i class='bx bx-menu-alt-right' id="header__btn"></i>
+                </div>
+            </div><!--.header-barra-->
+
+            <div class="modelo">
+                <h1 class="modelo__nombre">Modelo Stratocaster</h1>
+                <p class="modelo__descripcion">
+                    Si estás buscando algo versátil, la Stratocaster ha sido utilizada en una amplia variedad de géneros
+                    musicales, desde rock hasta
+                    blues, pop y más. Su
+                    versatilidad y comodidad la convierten en una elección popular entre músicos de todos los niveles.
+                </p>
+                <p class="modelo__precio">$399</p>
+                <a class="modelo__enlace" href="#">Ver Producto</a>
+            </div>
+        </div>
+
+        <img class="header__guitarra" src="img/header_guitarra.png" alt="imagen header guitarra">
+    </header>
+
+    <main class="productos productos__contenedor">
+        <h2 class="productos__heading">Nuestra Colección</h2>
+        <label for="categorias">Selecciona una categoría:</label>
+        <select id="categorias">
+            <option value="Todos">Todos los Instrumentos</option>
+            <option value="guitarrasElectricas">Guitarras Eléctricas</option>
+            <option value="guitarrasClasicas">Guitarras Clásicas</option>
+            <option value="baterias">Baterías</option>
+        </select>
+        <div class="productos__grid" id="productos__contenedor">
+
+        </div><!--./productos__grid-->
+    </main>
+    <section class="cursos" id="cursos">
+        <div class="cursos__contenedor cursos__grid">
+            <div class="cursos__contenido">
+                <h2 class="cursos__heading">Aprende a tocar guitarra</h2>
+                <p class="cursos__texto">
+                    🎸 ¡Descubre el músico que llevas dentro! 🎶 Aprende a tocar la guitarra con nuestro curso en línea.
+                    Desde principiantes
+                    hasta avanzados, todos son bienvenidos. Desbloquea tu potencial musical y domina los acordes,
+                    escalas y técnicas
+                    esenciales. 🚀 ¡Inscríbete ahora y comienza tu viaje musical hoy mismo! 🎵✨ #TocaLaMusica
+                </p>
+                <a class="cursos__enlace" href="#">Más información</a>
+            </div>
+        </div>
+    </section>
+    <section class="nosotros" id="nosotros">
+        <h2 class="nosotros__heading">Sobre Nosotros</h2>
+        <div class="nosotros__contenedor nosotros__grid">
+            <img src="img/nosotros.jpg" alt="imagen nosotros" class="nosotros__imagen">
+
+            <div class="nosotros__contenido">
+                <p class="nosotros__descripcion">
+                    En GuitarLA, nuestra pasión es inspirar y nutrir el amor por la música. Somos más que una simple
+                    academia; somos tu puerta de entrada al emocionante mundo de la expresión musical. Desde
+                    acordes melódicos
+                    hasta ritmos
+                    vibrantes, ofrecemos cursos de guitarra que se adaptan a todos los niveles, desde principiantes que
+                    apenas
+                    tocan su
+                    primera nota hasta músicos experimentados que buscan perfeccionar su arte.
+                </p>
+                <p class="nosotros__descripcion">
+                    No somos solo una academia; somos un destino musical completo. Además de nuestras lecciones
+                    magistrales,
+                    ofrecemos una
+                    exclusiva selección de guitarras eléctricas, clásicas y baterías. Cada instrumento que vendemos ha
+                    sido
+                    cuidadosamente
+                    seleccionado por su calidad excepcional y su capacidad para inspirar nuevas melodías.
+                </p>
+                <p class="nosotros__descripcion">
+                    Únete a nosotros en GuitarLA y descubre el poder transformador de la música. Ya sea
+                    que estés
+                    buscando
+                    aprender, perfeccionar tus habilidades o encontrar el instrumento perfecto para tu expresión
+                    musical,
+                    estamos aquí para
+                    hacer de tu viaje musical una experiencia extraordinaria.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="contacto" id="contacto">
+        <div class="contacto__contenedor">
+            <h3 class="contacto__heading">Contacto</h3>
+            <form class="contacto__formulario" id="miFormulario">
+                <input type="text" placeholder="Nombre y Apellido" id="nombreInput">
+                <input type="email" placeholder="Email" id="emailInput">
+                <textarea id="mensajeInput" class="textarea" placeholder="Ingrese su mensaje ..." name="" id=""
+                    cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+            <div id="mensajeResultado"></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__contenedor footer__contenido">
+            <p class="footer__copyright">Todos los derechos reservados &copy;
+            </p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/data.js"></script>
+</body>
+
+</html>

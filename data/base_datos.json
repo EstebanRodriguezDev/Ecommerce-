@@ -1,0 +1,152 @@
+{
+  "guitarrasElectricas": [
+    {
+      "id": 1,
+      "marca": "Fender",
+      "modelo": "American Professional",
+      "descripcion": "Un modelo clásico que ha sido utilizado en una amplia variedad de géneros musicales.",
+      "imagen": "../img/guitarra_01.jpg",
+      "precio": "$299"
+    },
+    {
+      "id": 2,
+      "marca": "Gibson",
+      "modelo": "Les Paul Standard",
+      "descripcion": "Conocida por su cuerpo sólido y tono grueso.",
+      "imagen": "../img/guitarra_02.jpg",
+      "precio": "$299"
+    },
+    {
+      "id": 3,
+      "marca": "Ibanez",
+      "modelo": "RG550 SELECT EDITION",
+      "descripcion": "Popular en el metal y estilos de rock más pesados.",
+      "imagen": "../img/guitarra_03.jpg",
+      "precio": "$299"
+    },
+    {
+      "id": 4,
+      "marca": "PRS",
+      "modelo": "SE Custom 24",
+      "descripcion": "Fabricada por Paul Reed Smith, ofrece una combinación de artesanía excepcional y versatilidad tonal.",
+      "imagen": "../img/guitarra_04.jpg",
+      "precio": "$299"
+    },
+    {
+      "id": 5,
+      "marca": "Gretsch",
+      "modelo": "G6136T-59 Vintage",
+      "descripcion": "Reconocida por su aspecto elegante y su uso en géneros como el rockabilly y el rock.",
+      "imagen": "../img/guitarra_05.jpg",
+      "precio": "$299"
+    },
+    {
+      "id": 6,
+      "marca": "Fender",
+      "modelo": "American Professional II Telecaster",
+      "descripcion": "Conocida por su simplicidad y tono brillante.",
+      "imagen": "../img/guitarra_06.jpg",
+      "precio": "$299"
+    }
+  ],
+  "guitarrasClasicas": [
+    {
+      "id": 7,
+      "marca": "Córdoba",
+      "modelo": "C7",
+      "descripcion": "Una guitarra clásica de gama media con una construcción de alta calidad.",
+      "imagen": "../img/guitarra_clasica.png",
+      "precio": "$299"
+    },
+    {
+      "id": 8,
+      "marca": "Yamaha",
+      "modelo": "CG192C",
+      "descripcion": "Parte de la serie CG de Yamaha, conocida por su relación calidad-precio.",
+      "imagen": "../img/guitarra_clasica.png",
+      "precio": "$299"
+    },
+    {
+      "id": 9,
+      "marca": "Alhambra",
+      "modelo": "5P",
+      "descripcion": "Fabricada en España, ofrece un tono cálido y una construcción sólida.",
+      "imagen": "../img/guitarra_clasica.png",
+      "precio": "$299"
+    },
+    {
+      "id": 10,
+      "marca": "La Patrie",
+      "modelo": "Etude",
+      "descripcion": "Hecha en Canadá, es una opción popular para principiantes y músicos intermedios.",
+      "imagen": "../img/guitarra_clasica.png",
+      "precio": "$299"
+    },
+    {
+      "id": 11,
+      "marca": "Esteve",
+      "modelo": "7C/B",
+      "descripcion": "Una guitarra clásica española con una construcción cuidadosa y un sonido auténtico.",
+      "imagen": "../img/guitarra_clasica.png",
+      "precio": "$299"
+    },
+    {
+      "id": 12,
+      "marca": "Taylor",
+      "modelo": "Academy 12e-N",
+      "descripcion": "Una opción más moderna, con una construcción de alta calidad y electrónica incorporada para aquellos que desean tocar en escenarios más grandes.",
+      "imagen": "../img/guitarra_clasica.png",
+      "precio": "$299"
+    }
+  ],
+  "baterias": [
+    {
+      "id": 13,
+      "marca": "DW",
+      "modelo": "Collector's Series Maple",
+      "descripcion": "Considerada por muchos como una de las mejores opciones en cuanto a artesanía y versatilidad.",
+      "imagen": "../img/bateria.png",
+      "precio": "$299"
+    },
+    {
+      "id": 14,
+      "marca": "Pearl",
+      "modelo": "Reference Pure",
+      "descripcion": "Ofrece una calidad de construcción excepcional y opciones de personalización avanzadas.",
+      "imagen": "../img/bateria.png",
+      "precio": "$299"
+    },
+    {
+      "id": 15,
+      "marca": "Tama",
+      "modelo": "Starclassic Maple",
+      "descripcion": "La serie Star de Tama es conocida por su artesanía de alta gama y la utilización de materiales premium.",
+      "imagen": "../img/bateria.png",
+      "precio": "$299"
+    },
+    {
+      "id": 16,
+      "marca": "Mapex",
+      "modelo": "Saturn V MH",
+      "descripcion": "Ofrece una combinación de tonos ricos y versatilidad.",
+      "imagen": "../img/bateria.png",
+      "precio": "$299"
+    },
+    {
+      "id": 17,
+      "marca": "Yamaha",
+      "modelo": "Recording Custom",
+      "descripcion": "Utilizada en una variedad de géneros, es conocida por su durabilidad y respuesta equilibrada.",
+      "imagen": "../img/bateria.png",
+      "precio": "$299"
+    },
+    {
+      "id": 18,
+      "marca": "Ludwig",
+      "modelo": "Classic Maple",
+      "descripcion": "Ofrece un sonido clásico y cálido con la calidad de construcción asociada con la marca Ludwig.",
+      "imagen": "../img/bateria.png",
+      "precio": "$299"
+    }
+  ]
+}
