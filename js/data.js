@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // MANEJAR CLICS EN EL BOTÓN "AGREGAR AL CARRITO"
   contenedorInstrumentos.addEventListener("click", function (event) {
+    event.preventDefault();
     const target = event.target;
 
     if (target.classList.contains("agregar-carrito")) {
@@ -160,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // MANEJAR CLICS EN EL BOTÓN "ELIMINAR" DENTRO DEL CARRITO
   carritoContainer.addEventListener("click", function (event) {
+    event.preventDefault();
     const target = event.target;
 
     if (target.classList.contains("eliminar-producto")) {

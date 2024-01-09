@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navegacion = document.querySelector("#navegacion");
   const menu_responsive = document.querySelector("#header__responsive");
   const menu__boton = document.querySelector("#header__btn");
+  const carrito__container = document.querySelector("#carrito-container");
 
   // VARIABLES PARA VALIDACIÓN DEL FORMULARIO
   // Elementos del DOM para el formulario y mensajes
@@ -14,22 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const mensajeInput = document.getElementById("mensajeInput");
   const mensajeResultado = document.getElementById("mensajeResultado");
 
-  // Función para gestionar el scroll y desaparecer el botón del menú en ciertos pixeles
-  const posicionDesaparicion = 600;
-  function gestionarScroll() {
-    const posicionScroll = window.scrollY || window.pageYOffset;
-    if (posicionScroll >= posicionDesaparicion) {
-      menu__boton.style.display = "none";
-    } else {
-      menu__boton.style.display = "flex";
-    }
-  }
-  // Escucha el evento de scroll y llama a la función de gestión
-  window.addEventListener("scroll", gestionarScroll);
-
   // Agrega transición al menú (al abrir y al cerrar)
-  menu__boton.addEventListener("click", () => {
+  menu__boton.addEventListener("click", (e) => {
+    e.preventDefault();
     // Transición para mostrar/ocultar el menú
+
     navegacion.style.transition = "display 0.3s ease-in-out";
     navegacion.style.display =
       navegacion.style.display === "none" || navegacion.style.display === ""
@@ -37,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : "none";
 
     // Transición para el fondo del menú responsivo
+
     menu_responsive.style.transition = "background 0.3s ease-in-out";
     menu_responsive.style.background =
       navegacion.style.display === "none" ? "transparent" : "#f2f2f2";
@@ -70,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const enlacesMenu = document.querySelectorAll(".navegacion__enlace");
   enlacesMenu.forEach((enlace, index) => {
     enlace.addEventListener("click", function (e) {
+      e.preventDefault();
       if (index === enlacesMenu.length - 1) {
         return false;
       }
