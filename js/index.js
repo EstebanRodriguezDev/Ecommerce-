@@ -16,37 +16,34 @@ document.addEventListener("DOMContentLoaded", () => {
   const mensajeResultado = document.getElementById("mensajeResultado");
 
   // Agrega transición al menú (al abrir y al cerrar)
+
   menu__boton.addEventListener("click", (e) => {
     e.preventDefault();
-    // Transición para mostrar/ocultar el menú
 
-    navegacion.style.transition = "display 0.3s ease-in-out";
-    navegacion.style.display =
-      navegacion.style.display === "none" || navegacion.style.display === ""
-        ? "flex"
-        : "none";
+    // Transición para mostrar/ocultar el menú
+    menu_responsive.style.transition = "width 0.3s ease-in-out";
+
+    if (
+      menu_responsive.style.width === "0%" ||
+      menu_responsive.style.width === ""
+    ) {
+      // Si el menú está oculto, mostrarlo y ajustar el ancho al 70%
+      menu_responsive.style.width = "70%";
+      navegacion.style.display = "flex";
+    } else {
+      // Si el menú está visible, ocultarlo y devolver el ancho a 0%
+      menu_responsive.style.width = "0%";
+      navegacion.style.display = "none";
+    }
 
     // Transición para el fondo del menú responsivo
-
-    menu_responsive.style.transition = "background 0.3s ease-in-out";
     menu_responsive.style.background =
-      navegacion.style.display === "none" ? "transparent" : "#f2f2f2";
+      menu_responsive.style.width === "0%" ? "transparent" : "#f2f2f2";
 
     // Transición para el ícono del botón del menú
     menu__boton.style.transition = "transform 0.3s ease-in-out";
     menu__boton.classList.toggle("bx-menu-alt-right");
     menu__boton.classList.toggle("bx-x");
-  });
-
-  // Cierra el menú si se hace clic fuera de él
-  document.addEventListener("click", (e) => {
-    if (
-      navegacion.style.display === "flex" &&
-      !navegacion.contains(e.target) &&
-      e.target !== menu__boton
-    ) {
-      cerrarMenu();
-    }
   });
 
   // Función para cerrar el menú
@@ -56,18 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     menu__boton.classList.remove("bx-x");
     menu__boton.classList.add("bx-menu-alt-right");
   }
-
-  // Cierra el menú al hacer clic en los enlaces, excepto en el último (especial)
-  const enlacesMenu = document.querySelectorAll(".navegacion__enlace");
-  enlacesMenu.forEach((enlace, index) => {
-    enlace.addEventListener("click", function (e) {
-      e.preventDefault();
-      if (index === enlacesMenu.length - 1) {
-        return false;
-      }
-      cerrarMenu();
-    });
-  });
 
   // VALIDACIÓN DEL FORMULARIO
   // Escucha el evento de envío del formulario
